@@ -1,0 +1,451 @@
+/**********************************************************
+				Structure specifications
+***********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  display: block;
+  font-family: open sans,sans-serif,Arial,Helvetica!important;
+  
+}
+.container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+p {
+	margin: 0.5rem 0;
+	color: #000;
+	line-height: inherit;
+}
+h1, h2 {
+	margin: 1rem 0;
+	color: #000;
+	font-size: 25px;
+	line-height: 31px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 20px;
+}
+a {
+ 	text-decoration: none;
+ 	color: #000;
+}
+.img-responsive {
+  max-width: 100%;
+  max-width: 100%;
+  display: block;
+  height: 100%; 
+  width: 100%; 
+  object-fit: contain
+}
+.text-center {
+	text-align: center;
+}
+section {
+	padding: 20px 0;
+	overflow: hidden;
+}
+section#hero-image,
+section#right-body {
+  padding: 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.section-title h2 span {
+  display: block;
+  font-size: 20px;
+  color: #002e5b;
+  letter-spacing: 0;
+}
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  bottom: -5px;
+  background: #000;
+}
+ul, ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fGalleryWrapper .fWrapperItems {
+  list-style: none;
+  position: relative;
+  margin-bottom: 30px;
+}
+.fButton {
+  display: inline-block;
+  padding: 8px 40px;
+  background: #de3930;
+  color:#fff;
+  margin-top: 20PX;
+}
+
+/**********************************************************
+        Customize
+***********************************************************/
+header {
+	width: 100%;
+	display: table;
+	background-color: #fff;
+}
+.custom-header{
+  padding:  0 !important;
+}
+#logo {
+	float: left;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 600;
+	padding: 20px 10px;
+}
+
+nav {
+	width: auto;
+	float: right;
+}
+
+nav ul {
+	display: table;
+	float: right;
+  margin-top: 5%;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:last-child {
+	padding-right: 0px;
+}
+
+nav ul li a {
+	color: #002e5b;
+	font-size: 18px;
+	padding: 25px 20px;
+	display: inline-block;
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover {
+  /* background-color: #e62117; */
+  background-color: rgba(0, 0, 0, 0.1);
+	/* color: #fff; */
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover i {
+	color: #fff;
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a i {
+	padding-right: 10px;
+	color: #002e5b;
+	transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul {
+	display: table;
+	width: 25px;
+}
+
+.toggle-menu ul li {
+	width: 100%;
+	height: 3px;
+	background-color: #002e5b;
+	margin-bottom: 4px;
+}
+
+.toggle-menu ul li:last-child {
+	margin-bottom: 0px;
+}
+
+input[type=checkbox],
+label {
+	display: none;
+}
+section#banner {
+  padding: 0;
+}
+#service .content ul li .img{
+  position: relative;
+  display: inline-flex;
+}
+#banner .img > div > div h2 {
+  color: #fff;
+  font-size: 30px;
+}
+#trophy {
+  background: #f1f1f1;
+}
+.galery-hover ul {
+  margin-top: 30px;
+}
+.galery-hover ul li .fGallery {
+  padding: 0 15px;
+}
+.galery-hover ul li .fGallery .content .description p {
+  margin: 0;
+}
+.galery-hover ul li .img,
+.galery-hover ul li .content {
+  transition: 0.6s all;
+}
+.galery-hover ul li .content .img{
+  border: 1px solid #beb6b6;
+  border-bottom: 0px;
+  display: block;
+  background: #000;
+} 
+.galery-hover ul li .content {
+  margin-top: -10px;
+  padding: 15px;
+  border: 1px solid #cdcdcd;
+  background: aliceblue !important;
+
+}
+.galery-hover li .img{
+  overflow: hidden;
+}
+.galery-hover li .img img {
+  transform: scale(1);
+  transition: 0.6s all;
+}
+.galery-hover li:hover .img,
+.galery-hover ul li:hover .content {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  border-color: #999;
+}
+.galery-hover li:hover .img img {
+  transform: scale(1.1);
+}
+.trophy ul li .year {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e62117;
+  padding: 0px 21px;
+}
+.trophy ul li .year p {
+  color: #fff;
+}
+.news-sec .content h4 {
+  margin: 0;
+}
+.champ-sec ul li .fGallery {
+  display: inline-block;
+  width: 100%;
+}
+.champ-sec ul li:after {  
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 2px;
+  background: rgba(206, 207, 207);
+}
+.champ-sec ul li .fGallery .img {
+  width: 25%;
+  float: left;
+}
+.champ-sec ul li .fGallery .content {
+  float: right;
+  width: 75%;
+  padding: 20px 0;
+}
+.champ-sec ul li .fGallery .content > div {
+  padding: 0 20px;
+}
+.shop .content {
+  text-align: center;
+}
+.shop ul li .content {
+  border: none;
+}
+.shop ul li .content a.banner-bt {
+  border: 1px solid #e62117;
+  color: #e62117; 
+}
+.shop ul li .content a.banner-bt:hover {
+  color: #fff;
+}
+#video-sec .video-sec.w-60 {
+  float: left;
+  width: 50%;
+}
+#video-sec .video-sec.w-40 {
+  float: left;
+  width: 50%;
+}
+#registration .form-sec {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+}
+#fFooter {
+  background: #000;
+  padding: 30px 0;
+}
+#fFooter .content span, #fFooter .content a {
+  color: #fff;
+}
+.footer-div {
+  display: inline-block;
+  width: 100%;
+}
+.footer-div > div {
+  float: left;
+}
+.footer-div > div.copy {
+  width: 60%;
+}
+.footer-div > div.copy p {
+  color: #fff;
+}
+.footer-div > div.content {
+  float: right;
+  width: 40%;
+}
+
+/**************************************
+      Responsive
+*****************************************/
+@media only screen and (max-width: 980px) {
+  header {
+    padding: 20px 5px;
+    width: 100%
+  }
+  
+  #logo {
+    padding: 0px;
+  }
+  
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: none;
+  }
+  
+  input[type=checkbox]:fous {
+    background: none;
+  }
+  
+  label {
+    float: right;
+    padding-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox]:checked~nav {
+    display: block;
+  }
+  
+  nav {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 53px;
+    background-color: #002e5b;
+    padding: 0px;
+    z-index: 99;
+  }
+  
+  nav ul {
+    width: auto;
+  }
+  
+  nav ul li {
+    float: none;
+    padding: 0px;
+    width: 100%;
+    display: table;
+  }
+  
+  nav ul li a:hover i {
+    color: #fde428;
+    transition: all 0.5s ease 0s;
+  }
+  
+  nav ul li a {
+    color: #FFF;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+  }
+  
+  nav ul li a i {
+    color: #fde428;
+    padding-right: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .player .fGalleryWrapper .fWrapperItems {
+    float: left;
+    width: 25%;
+  }
+  .trophy .fGalleryWrapper .fWrapperItems,
+  .news-sec .fGalleryWrapper .fWrapperItems {
+    float: left;
+    width: 45%; 
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
