@@ -7,7 +7,34 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 <body>
-<?php include 'header.php';?>
+	<header>
+		
+		<section class="custom-header">
+			<a  id="logo" target="_blank">
+			<img  src="img/mylogo.png" class="img-responsive">
+			</a>
+			
+			<label for="toggle-1" class="toggle-menu">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</label>
+			<input type="checkbox" id="toggle-1">
+
+			<nav>
+				<ul>
+					<li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="prices.html"><span>Prices</span></a></li>
+					<li><a href="contact.html"><span>Contact</span></a></li>
+				
+
+				</ul>
+			</nav>
+	</header>
+	<section id="right-body">
 
 <section id="form-sec">
        <div class="container">
@@ -41,6 +68,19 @@
 	</section>
  </section>
 
-<?php include 'footer.php';?>
+
+ <footer id="fFooter">
+		<div class="container">
+			<div class="footer-div">
+				<div class="copy">
+					<p>© Copyright 2020 Sunshine</p>
+				</div>
+				<div class="content text-center">
+					<p><span>Mail me at: </span><a href="mailto:sunshine@gmail.com">sunshine@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+</footer>
+
 </body>
 </html>
